@@ -11,7 +11,15 @@ const (
 	// NUM eric
 	NUM = "0123456789"
 	// ALPHANUM eric
-	ALPHANUM = "abcdefghijklmnopqrstuvwxyz"
+	ALPHANUM = "abcdefghijklmnopqrstuvwxyz0123456789"
+	// ALPHACASE = alphabetic case sensitive
+	ALPHACASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	// ALPHANUMCASE = alphanumeric case sensitive
+	ALPHANUMCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+	// HEX adecimal
+	HEX = "0123456789abcdef"
+	// HEXCASE = hexadecimal case sensitive
+	HEXCASE = "0123456789abcdefABCDEF"
 )
 
 // OneOf returns one of input
