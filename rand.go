@@ -48,7 +48,7 @@ func Of(d string, l int) string {
 	dl := len(d)
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	o := ""
-	for i := 0; i < dl; i++ {
+	for i := 0; i < l; i++ {
 		o = o + string(d[r.Intn(dl)])
 	}
 	return o
