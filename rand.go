@@ -43,6 +43,16 @@ func Num(l int) string {
 	return Of(NUM, l)
 }
 
+// Bin returns a random byte array of given length l
+func Bin(l int) []byte {
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	bo := make([]byte, l)
+	for i := 0; i < l; i++ {
+		bo[i] = byte(r.Intn(256))
+	}
+	return bo
+}
+
 // Of return a random string in given domain d of given length l
 func Of(d string, l int) string {
 	dl := len(d)
